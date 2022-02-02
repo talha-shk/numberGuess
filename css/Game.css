@@ -1,0 +1,140 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(-12.25 2.8) rotate(1.75 1409 581) scale(1.007)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='translate(-7 7) rotate(2.1 800 450) scale(1.004)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(6.3 -21) rotate(21 401 736) scale(1.004)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(42 -2.8) rotate(0.7 150 345) scale(0.993)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='translate(-28 -17.5) rotate(25.2 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-42 14) rotate(4.2 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container {
+  border: 1px solid rgba(253, 6, 6, 0.5);
+  background-color: white;
+  box-shadow: 3px 6px 25px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 6px 25px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 6px 25px -4px rgba(0, 0, 0, 0.75);
+  width: 50%;
+  margin: 3rem auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  font-family: "Bebas Neue", cursive;
+  color: rgb(69, 5, 112);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.center {
+  padding: 0;
+  margin: 0 auto;
+  line-height: 0%;
+  text-align: center;
+  margin: 0rem 0.6rem;
+}
+.vv {
+  visibility: hidden;
+}
+.mid {
+  background-color: #1f9ded;
+  border-radius: 10px;
+  color: rgba(243, 243, 243, 0.856);
+  margin: 0.8rem 0rem;
+  padding: 0.2rem 0.5rem;
+  /* width: 70%; */
+  font-size: 0.7rem;
+}
+#inp {
+  width: 60px;
+  height: 50px;
+  font-size: 3rem;
+  color: indigo;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+#inp:focus {
+  border-color: indigo;
+}
+::-webkit-input-placeholder {
+  /* Edge */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  text-align: center;
+}
+
+::placeholder {
+  text-align: center;
+}
+.btn {
+  background-color: indigo;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.4rem 0rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: rgb(104, 3, 175);
+}
+.clr {
+  color: indigo;
+}
+#message3 {
+  text-align: center;
+}
+
+/* responsive */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+  .mid {
+    width: 70%;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 60%;
+  }
+  .mid {
+    width: 80%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 50%;
+  }
+}

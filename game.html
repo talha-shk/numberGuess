@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/Game.css">
+    <title>Number Guess Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Number Guess game</h1>
+      </div>
+      <div class="section">
+        <div class="upper">
+          <div class="min center">
+            <p>Minimum</p>
+            <h1>
+              <span id="min"></span> <i class="fas fa-long-arrow-alt-down clr"></i></i>
+            </h1>
+          </div>
+          <div class="max center">
+            <p>Maximum</p>
+            <h1>
+              <span id="max"></span>  <i class="fas fa-long-arrow-alt-up clr"></i>
+            </h1>
+          </div>
+          <div class="min center">
+            <p class="wrap">Iterations</p>
+            <h1>
+              <span id="iteration"></span>
+              <i class="fas fa-long-arrow-alt-down vv"></i>
+            </h1>
+          </div>
+        </div>
+        <div id="mid" class="mid">
+          <h3>
+            To play a number, enter it in the field below and press the "Verify"
+            button.
+          </h3>
+        </div>
+        <input  type="text" id="inp" placeholder="0" />
+        <button onclick="play()" class="btn" id="btn">Verify</button>
+        <button onclick="Again()" class="btn" id="btn2" style="display: none;">Play Again</button>
+        <p id="message1"></p>
+        <p id="message2"></p>
+        <p id="message3"></p>
+      </div>
+    </div>
+    <script src="script/Game.js"></script>
+  </body>
+</html>
